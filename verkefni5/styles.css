@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 16px;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 20px;
+}
+
+.main__cardTitle {
+  font-size: 24px;
+  line-height: 24px;
+  overflow-wrap: break-word;
+  margin-bottom: 20px;
+}
+
+.main__cardText {
+  line-height: 20px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.main__img {
+  max-width: 100%;
+}
+
+.main__list {
+  margin-top: auto;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 5px;
+}
+
+.main__listItem {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.main__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.main__card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background: #fff;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  max-width: 470px;
+  max-height: 320px;
+  margin-bottom: 10px;
+  order: 1;
+  overflow-y: scroll;
+}
+
+.main__card:last-child {
+  order: 0;
+}
+
+.main__cardContainer {
+  display: flex;
+}
+
+.main__imgContainer {
+  flex: 0 0 150px;
+  padding-right: 20px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .main__cards {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1500px) {}

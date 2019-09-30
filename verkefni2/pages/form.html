@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="is">
+
+<head>
+    <title>Form</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <form>
+        <h1>Form</h1>
+        <fieldset>
+            <legend>Notandi</legend>
+            <div>
+                <label for="username">Notendanafn:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div>
+                <label for="email">Netfang:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="password">Lykilorð:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div>
+                <label for="password_repeat">Lykilorð aftur:</label>
+                <input type="password" id="password_repeat" name="password_repeat">
+                <span>Lykilorð verða að vera eins</span>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Spurningar</legend>
+            <div>
+                <label>Kyn:</label>
+                <input type="radio" id="female" name="gender" value="Kona">
+                <label for="female">Kona</label>
+                <input type="radio" id="male" name="gender" value="Karl">
+                <label for="male">Karl</label>
+                <input type="radio" id="other" name="gender" value="Annað">
+                <label for="other">Annað</label>
+            </div>
+            <div>
+                <label for="age">Aldur:</label>
+                <select id="age">
+                    <option value="">-Vinsamlegast veljið-</option>
+                    <option value="younger than 13 years old">Yngri en 13 ára</option>
+                    <option value="13-20 years old">13-20 ára</option>
+                    <option value="21-65 years old">21-65 ára</option>
+                    <option value="older than 65 years old">Eldri en 65 ára</option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" checked id="send_copy">
+                <label for="send_copy">Senda afrit af notandaupplýsingum á netfang</label>
+            </div>
+            <div>
+                <label for="comment">Athugasemdir</label>
+                <textarea id="comment"></textarea>
+            </div>
+        </fieldset>
+        <button type="submit">Senda</button>
+    </form>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Forsíða</a></li>
+            <li><a href="form.html"><b>Form</b></a></li>
+            <li><a href="table.html">Tafla</a></li>
+            <li><a href="text.html">Texti</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

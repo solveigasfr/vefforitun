@@ -1,0 +1,139 @@
+html, body {
+    font-size: 18px;
+}
+
+/* Headings */
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid#999;
+}
+
+h2 {
+    font-size: 1.66em;
+    margin: 0;
+    color: #999;
+}
+
+h3 {
+    font-size: 1em;
+    margin: 0;
+}
+
+.card-section h2 {
+    display: none;
+}
+
+/* Buttons */
+
+button {
+    border: solid 5px;
+    font-size: 1em;
+    border-color: #999 #999 #666 #666;
+}
+
+button:hover {
+    border: solid 10px;
+    border-color: #666 #666 #999 #999
+}
+
+/* Texts */
+
+/* First paragraph */
+
+.card-text p:nth-child(2) {
+    font-size: 1em;
+    margin-left: 0;
+}
+
+.card-text p:nth-child(2)::first-line {
+    background-color: #ccc;
+}
+
+.card-text p:nth-child(2)::first-letter {
+    font-size: 2em;
+}
+
+/* Second paragraph */
+
+.card-text p:nth-child(3) {
+    font-size: 0.88em;
+    margin-left: 2.77em;
+}
+
+.card-text p:nth-child(3)::first-line {
+    background-color: #ddd;
+}
+
+.card-text p:nth-child(3)::first-letter {
+    font-size: 2em;
+}
+
+/* Third paragraph */
+
+.card-text p:nth-child(4) {
+    font-size: 0.77em;
+    margin-left: 5.5em;
+}
+
+.card-text p:nth-child(4)::first-line {
+    background-color: #eee;
+}
+
+.card-text p:nth-child(4)::first-letter {
+    font-size: 2em;
+}
+
+/* Cards */
+
+.cards {
+    max-width: 37em;
+    margin: auto;
+}
+
+.cards .card {
+    display: inline-block;
+}
+
+.cards:hover .card:nth-child(odd) {
+    background-color: #333;
+    color: #fff;
+}
+
+.cards:hover .card:nth-child(even) {
+    background-color: #fff;
+    color: #333;
+}
+
+.cards::after {
+    content: "Ekki meira efni";
+    display: inline-block;
+    width: 100%;
+    margin: 1em auto;
+    border-top: 1px solid #c00;
+    padding-top: 1em;
+}
+
+.cards button {
+    display: block;
+    margin: 2em auto;
+}
+
+.card {
+    width: 10em;
+    height: 10em;
+    margin: 0.5em;
+    padding: 0.5em;
+    border: 1px solid #000;
+}
+
+.card:nth-child(odd) {
+    background-color: #fff;
+    color: #333;
+}
+
+.card:nth-child(even) {
+    background-color: #333;
+    color: #fff;
+}
